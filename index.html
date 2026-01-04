@@ -3,21 +3,39 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Movie App</title>
+        <title>AI Movie Recommender - Personalized Content Discovery</title>
+        <meta name="description" content="AI-powered movie recommendation system with personalized suggestions, genre filters, actor search, and content ratings." />
         <link rel="stylesheet" href="style.css" />
         <script src="script.js" defer></script>
     </head>
     <body>
         <header>
-            <form id="form">
-                <input
-                    type="text"
-                    id="search"
-                    placeholder="Search"
-                    class="search"
-                />
-            </form>
+            <div class="header-content">
+                <h1 class="app-title">🎬 AI Movie Recommender</h1>
+                <form id="form">
+                    <input
+                        type="text"
+                        id="search"
+                        placeholder="Search movies..."
+                        class="search"
+                    />
+                </form>
+            </div>
         </header>
         <main id="main"></main>
+        <footer>
+            <div class="footer-content">
+                <p class="legal-disclaimer">
+                    ⚖️ <strong>Legal Notice:</strong> This application is a recommendation service only. 
+                    We do not host, stream, or distribute copyrighted content. All movie data is provided by 
+                    <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">The Movie Database (TMDB)</a>. 
+                    Please use legal streaming services to watch movies.
+                </p>
+                <p class="attribution">
+                    Powered by <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB API</a> | 
+                    © 2026 AI Movie Recommender
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
