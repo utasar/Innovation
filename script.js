@@ -1,3 +1,7 @@
+// TMDB API Configuration
+// Note: This API key is publicly visible in client-side code. TMDB's free tier is designed
+// for this use case. For production applications with higher usage, consider using a backend
+// proxy to protect your API key. Get your own key at: https://www.themoviedb.org/settings/api
 const API_KEY = "04c35731a5ee918f014970082a0088b1";
 const APIURL = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${API_KEY}&page=1`;
 const IMGPATH = "https://image.tmdb.org/t/p/w1280";
@@ -398,7 +402,7 @@ function getClassByRate(vote) {
 }
 
 // Genre Navigation
-function createGenreNavigation() {
+async function createGenreNavigation() {
     const header = document.querySelector('header');
     const genreNav = document.createElement('div');
     genreNav.classList.add('genre-nav');
@@ -418,19 +422,32 @@ function createGenreNavigation() {
     genreNav.innerHTML = navContent;
     header.insertBefore(genreNav, header.firstChild);
 
-    // Populate genre list
-    setTimeout(() => {
-        const genreList = document.getElementById('genre-list');
-        if (genreList && recommendationEngine.genres.length > 0) {
-            recommendationEngine.genres.forEach(genre => {
-                const genreBtn = document.createElement('button');
-                genreBtn.classList.add('genre-item');
-                genreBtn.textContent = genre.name;
-                genreBtn.onclick = () => showMoviesByGenre(genre.id, genre.name);
-                genreList.appendChild(genreBtn);
-            });
-        }
-    }, 1000);
+    // Wait for genres to load, then populate list
+    await waitForGenres();
+    populateGenreList();
+}
+
+async function waitForGenres() {
+    // Wait for genres to be loaded with a maximum timeout
+    const maxAttempts = 10;
+    let attempts = 0;
+    while (recommendationEngine.genres.length === 0 && attempts < maxAttempts) {
+        await new Promise(resolve => setTimeout(resolve, 200));
+        attempts++;
+    }
+}
+
+function populateGenreList() {
+    const genreList = document.getElementById('genre-list');
+    if (genreList && recommendationEngine.genres.length > 0) {
+        recommendationEngine.genres.forEach(genre => {
+            const genreBtn = document.createElement('button');
+            genreBtn.classList.add('genre-item');
+            genreBtn.textContent = genre.name;
+            genreBtn.onclick = () => showMoviesByGenre(genre.id, genre.name);
+            genreList.appendChild(genreBtn);
+        });
+    }
 }
 
 // Filter Controls
