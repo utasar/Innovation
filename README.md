@@ -6,13 +6,13 @@ An intelligent, AI-powered movie recommendation system that provides personalize
 
 ## Features
 
-### 🤖 AI-Powered Recommendations
+###  AI-Powered Recommendations
 - **Content-Based Filtering**: Sophisticated algorithm that analyzes movie attributes
 - **Personalized Scoring**: Ranks movies based on genre preferences, ratings, popularity, and recency
 - **Adaptive Learning**: System learns from user interactions and improves over time
 - **Smart Suggestions**: Automatically detects favorite genres from viewing history
 
-### 🎯 Content Discovery
+### Content Discovery
 - **For You**: Personalized recommendations based on your unique taste
 - **Trending**: Weekly trending movies from around the world
 - **Top Rated**: Highest-rated movies across all genres
@@ -20,7 +20,7 @@ An intelligent, AI-powered movie recommendation system that provides personalize
 - **Actor Search**: Find top movies featuring your favorite actors
 - **Similar Movies**: Discover related content based on any movie
 
-### 💡 Interactive User Experience
+###  Interactive User Experience
 - **Modern UI**: Beautiful gradient design with smooth animations
 - **Detailed Movie Information**: 
   - High-quality posters
@@ -33,19 +33,19 @@ An intelligent, AI-powered movie recommendation system that provides personalize
 - **Smart Search**: Real-time movie search with instant results
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 
-### 👍 Feedback System
+### Feedback System
 - **Like/Dislike**: Simple feedback mechanism for each movie
 - **Visual Indicators**: Active states show your preferences
 - **Real-time Updates**: Recommendations improve instantly with your feedback
 - **Toast Notifications**: Friendly confirmations for user actions
 
-### ⚖️ Legal Compliance
+###  Legal Compliance
 - **Recommendation Only**: We don't host or distribute copyrighted content
 - **Clear Disclaimers**: Legal notices in footer and modals
 - **Official Links**: Trailers link to official YouTube videos
 - **TMDB Attribution**: Proper credit to The Movie Database API
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Modern web browser (Chrome, Firefox, Safari, Edge)
@@ -75,7 +75,7 @@ php -S localhost:8000
 ### No Build Required!
 This is a pure JavaScript application with no dependencies or build steps needed.
 
-## 📖 Usage
+## Usage
 
 ### First Time User
 1. **Browse Content**: Start by exploring "Trending" or "Top Rated" movies
@@ -89,7 +89,7 @@ This is a pure JavaScript application with no dependencies or build steps needed
 - **Similar Movies**: Click "Similar Movies" in any movie overview for recommendations
 - **Search**: Use the search bar to find specific titles
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Core Components
 
@@ -124,7 +124,7 @@ User Interaction → Feedback Storage → Preference Update →
 Algorithm Scoring → Ranked Results → Display
 ```
 
-## 🔧 Technical Details
+##  Technical Details
 
 ### Technologies
 - **HTML5**: Semantic markup
@@ -149,7 +149,7 @@ Uses The Movie Database (TMDB) API for:
 - Safari: Full support
 - Mobile browsers: Responsive support
 
-## 🎨 Customization
+##  Customization
 
 ### Styling
 Edit `style.css` to customize:
@@ -182,7 +182,7 @@ This application uses The Movie Database (TMDB) API. To use your own API key:
 
 **Note**: The included API key is a publicly available demo key. For production use, consider implementing a backend proxy to protect your API key from unauthorized use.
 
-## 📊 Data Privacy
+##  Data Privacy
 
 ### What We Store
 - **Local Only**: All data stored in browser's localStorage
@@ -195,7 +195,7 @@ This application uses The Movie Database (TMDB) API. To use your own API key:
 - Payment information
 - Location data
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -206,39 +206,23 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
 
-This project is open source and available for educational purposes.
 
-### Legal Notice
-This application is a **recommendation service only**. We do not:
-- Host copyrighted content
-- Stream movies or TV shows
-- Distribute pirated material
-- Encourage illegal downloading
 
-Please use legal streaming services to watch movies:
-- Netflix
-- Amazon Prime Video
-- Disney+
-- Hulu
-- HBO Max
-- Apple TV+
-
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **The Movie Database (TMDB)**: For providing the comprehensive movie API
 - **Google Fonts**: For the Poppins font family
 - **Open Source Community**: For inspiration and best practices
 
-## 📞 Support
+##  Support
 
 For issues, questions, or suggestions:
 - Open an issue on GitHub
 - Check existing issues for solutions
 - Review the documentation
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 Potential features for future versions:
 - Music and TV show recommendations
@@ -252,6 +236,5 @@ Potential features for future versions:
 
 ---
 
-**Made with ❤️ for movie lovers everywhere**
+**Made with  for movie lovers everywhere**
 
-*Powered by [The Movie Database (TMDB)](https://www.themoviedb.org/)*
