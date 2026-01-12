@@ -1,10 +1,10 @@
-# 🎬 AI Movie Recommender
+# AI Movie Recommender
 
 An intelligent, AI-powered movie recommendation system that provides personalized content discovery based on user preferences, viewing history, and feedback.
 
 ![AI Movie Recommender](https://github.com/user-attachments/assets/5502e57f-12c0-47ef-99b6-c94393b98ee7)
 
-## ✨ Features
+## Features
 
 ### 🤖 AI-Powered Recommendations
 - **Content-Based Filtering**: Sophisticated algorithm that analyzes movie attributes
